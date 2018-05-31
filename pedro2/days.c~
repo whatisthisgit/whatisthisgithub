@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+	printf("leftover seconds:%i\n", seconds_to_days(86300));
+	return 0;
+}
+
+int seconds_to_days(int s) {	
+	int d = s / 86400;
+	printf("days:%i\n", d);
+	int resta = s - d*86400;
+	return resta;
+}
